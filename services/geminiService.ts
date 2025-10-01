@@ -15,11 +15,11 @@ const getCreativePrompt = (timeInterval: string): string => {
         case 'one second':
             return `Analyze this image and creatively generate an image of the scene one second in the future. Introduce a subtle but dynamic change—a shift in expression, a slight movement, or a change in lighting that suggests the story is moving forward.${instruction}`;
         case 'one hour':
-            return `Analyze this image and creatively generate an image of the scene one hour in the future. The sun has moved, casting new light and long shadows. The atmosphere has shifted. If there are characters, they have moved on to a new activity. The scene should feel transformed by the passage of this hour.${instruction}`;
+            return `Analyze this image and creatively generate an image of the scene one hour in the future. The sun has moved, casting new light and long shadows. The atmosphere has shifted. If there are people, they should be in a different pose or engaged in a new activity, reflecting the passing hour. The scene should feel transformed.${instruction}`;
         case 'one day':
-            return `Analyze this image and creatively generate an image of the scene 24 hours later. The weather is completely different. Signs of the previous day's activities might be present but altered. Introduce a new, unexpected element that tells a story about what happened during the last 24 hours.${instruction}`;
+            return `Analyze this image and creatively generate an image of the scene 24 hours later. The weather is completely different. Signs of the previous day's activities might be present but altered. If there are people, they should be wearing different clothes and be in a new pose. Introduce an unexpected element that tells a story about what happened during the last 24 hours.${instruction}`;
         case 'one year':
-            return `Analyze this image and creatively generate an image of the scene a full year in the future. The season is different. Show the dramatic effects of time: plants have grown or withered, structures may show wear, or new things might have appeared. The transformation should be significant and tell a story of a year's passage.${instruction}`;
+            return `Analyze this image and creatively generate an image of the scene a full year in the future. The season is different. Show the dramatic effects of time: plants have grown or withered, structures may show wear. If there are people, show the passage of a year on them: they might appear slightly older, have a different hairstyle, facial hair, or fashion style. They should be wearing season-appropriate clothing and be in a new pose that tells a story. The overall transformation should be significant.${instruction}`;
         default:
             return `Generate an image showing this scene ${timeInterval} in the future.${instruction}`;
     }
