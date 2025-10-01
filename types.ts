@@ -1,0 +1,7 @@
+
+export enum AppState {
+  IDLE,
+  IMAGE_UPLOADED,
+  GENERATING,
+  IMAGE_GENERATED
+}
